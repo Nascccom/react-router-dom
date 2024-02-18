@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from "./components/Site.module.css";
-import {Link, Navigate, NavLink, Route, Routes, useNavigate} from "react-router-dom";
+import {Navigate, NavLink, Route, Routes, useNavigate} from "react-router-dom";
 import {PageOne} from "./components/pages/PageOne";
 import {PageTwo} from "./components/pages/PageTwo";
 import {PageThree} from "./components/pages/PageThree";
@@ -16,13 +16,20 @@ function App() {
           <div className={styles.body}>
               <div className={styles.nav}>
                   <div>
-                      <NavLink to='/page1'>Page 1</NavLink>
+                      <NavLink to='/page1'
+                               className={({isActive}) => isActive ? styles.active : styles.navLink}>
+                          Page 1
+                      </NavLink>
                   </div>
                   <div>
-                      <NavLink to='/page2'>Page 2</NavLink>
+                      <NavLink to='/page2' className={({isActive}) => isActive ? styles.active : styles.navLink}>
+                          Page 2
+                      </NavLink>
                   </div>
                   <div>
-                      <NavLink to='/page3'>Page 3</NavLink>
+                      <NavLink to='/page3' className={({isActive}) => isActive ? styles.active : styles.navLink}>
+                          Page 3
+                      </NavLink>
                   </div>
               </div>
               <div className={styles.content}>
