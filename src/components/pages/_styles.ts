@@ -8,35 +8,8 @@ const Header = styled.header`
     color: white;
 `
 
-const NavWrapper = styled.div`
-    margin-left: 10px;
-    font-size: 20px;
-
-    & > a {
-        text-decoration: none;
-        color: #232b31
-    }
-
-    & > a.active {
-        text-decoration: underline;
-        color: #6858cc
-    }
-
-    & > a:hover {
-        color: cornflowerblue;
-    }
-`
-
 const Body = styled.body`
     display: flex
-`
-
-const Nav = styled.nav`
-    background-color: white;
-    min-height: 400px;
-    width: 30%;
-    color: #282c34;
-    font-size: 30px;
 `
 
 const Content = styled.div`
@@ -55,11 +28,22 @@ const Footer = styled.footer`
     color: white;
 `
 
+const AdidasGallery = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    & > a > img {
+        width: 250px;
+    }
+`
 
 
 export const S = {
-    NavWrapper,
     Header,
     Body,
-    Nav, Content, Footer
+    Content,
+    Footer,
+    AdidasGallery
 }
