@@ -24,7 +24,6 @@ export const Routing = () => {
           <Route path={PATH.ABIBAS} element={<Abibas/>}/>
           <Route path={`${PATH.ADIDAS}/:modelId`} element={<Model data={adidasArr}/>}/>
 
-
           <Route path={PATH.ERROR404} element={<Error404/>}/>
           <Route path='/*' element={<Navigate to={PATH.ERROR404}/>}/>
       </Routes>
