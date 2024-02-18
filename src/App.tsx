@@ -15,7 +15,15 @@ function App() {
           <div className={styles.header}><h1>HEADER</h1></div>
           <div className={styles.body}>
               <div className={styles.nav}>
-
+                  <div>
+                      <NavLink to='/page1'>Page 1</NavLink>
+                  </div>
+                  <div>
+                      <NavLink to='/page2'>Page 2</NavLink>
+                  </div>
+                  <div>
+                      <NavLink to='/page3'>Page 3</NavLink>
+                  </div>
               </div>
               <div className={styles.content}>
                   <Routes>
